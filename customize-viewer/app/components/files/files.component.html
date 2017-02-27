@@ -181,6 +181,13 @@
       </template>
     </extension-viewer>
 
+
+    <extension-viewer [supportedExtensions]="['zip']" #extension>
+      <template let-urlFileContent="urlFileContent" let-extension="extension" >
+        <ng2-alfresco-zip-viewer [urlFile]="urlFileContent" ></ng2-alfresco-zip-viewer>
+      </template>
+    </extension-viewer>
+
   </alfresco-viewer>
 </div>
 

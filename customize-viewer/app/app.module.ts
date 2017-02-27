@@ -14,12 +14,13 @@ import { UserInfoComponentModule } from 'ng2-alfresco-userinfo';
 import { ViewerModule } from 'ng2-alfresco-viewer';
 import { AppComponent } from './app.component';
 import { routing } from './app.routes';
+import { Ng2AlfrescoZipViewerModule } from 'ng2-alfresco-zip-viewer';
 
 import {
   HomeComponent,
   SearchComponent,
   SearchBarComponent,
-  
+
   FilesComponent,
   AboutComponent,
   LoginDemoComponent,
@@ -32,23 +33,25 @@ import {
         routing,
         CoreModule.forRoot(),
         DataTableModule.forRoot(),
-        SearchModule.forRoot(), 
-        
+        SearchModule.forRoot(),
+
         DocumentListModule.forRoot(),
         UploadModule.forRoot(),
         ViewerModule.forRoot(),
-        
+
         LoginModule.forRoot(),
         UserInfoComponentModule.forRoot(),
         Editor3DModule.forRoot(),
-        TagModule.forRoot()
+        TagModule.forRoot(),
+
+        Ng2AlfrescoZipViewerModule
     ],
     declarations: [
         AppComponent,
         HomeComponent,
         SearchBarComponent,
         SearchComponent,
-        
+
         FilesComponent,
         AboutComponent,
         LoginDemoComponent,

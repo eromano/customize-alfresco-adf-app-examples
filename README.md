@@ -5,6 +5,10 @@
 - [Customize document list](customize-document-list/README.md)
 - [Customize Viewer](customize-viewer/README.md)
 
+## Components
+- [Version Badge Component](ng2-alfresco-version-badge/README.md)
+- [Zip Viewer](ng2-alfresco-zip-viewer/README.md)
+
 ## How to use the demo
 
 
