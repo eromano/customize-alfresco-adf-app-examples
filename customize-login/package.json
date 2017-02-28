@@ -1,6 +1,6 @@
 {
-  "name": "customize-viewer",
-  "description": "example hot to customize ng2-alfresco-viewer",
+  "name": "customize-login",
+  "description": "Customize Login example",
   "version": "0.1.0",
   "author": "Eugenio Romano <eugenio.romano@alfresco.com>",
   "scripts": {
@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/eromano/customize-viewer.git"
+    "url": "https://github.com/eromano/customize-login.git"
   },
   "bugs": {
-    "url": "https://github.com/eromano/customize-viewer/issues"
+    "url": "https://github.com/eromano/customize-login/issues"
   },
   "keywords": [
     "",

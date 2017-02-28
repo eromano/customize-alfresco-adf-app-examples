@@ -4,6 +4,7 @@
 
 - [Customize document list](customize-document-list/README.md)
 - [Customize Viewer](customize-viewer/README.md)
+- [Customize Login](customize-login/README.md)
 
 ## Components
 - [Version Badge Component](ng2-alfresco-version-badge/README.md)
