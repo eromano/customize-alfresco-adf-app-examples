@@ -1,5 +1,11 @@
 # Customize alfresco ADF 1.2 examples
 
+This repository contain same examples on how to customize Alfresco ADF.
+
+## Slides
+
+- [slides](https://www.slideshare.net/EugenioRomano/adf-in-action-12)
+
 ## Examples
 
 - [Customize document list](customize-document-list/README.md)
