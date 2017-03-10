@@ -1,5 +1,59 @@
-# customize-document-list
-Customizr document list alfresco ADF
+# Customize Document list
+
+The examples in this repository are part of the [slides](https://www.slideshare.net/EugenioRomano/adf-in-action-12) adf in action.
+In this Example we are going to customize the ADF document list in order to show the version of the file.
+
+<p align="center">
+  <img title="browser stack" alt='browser stack' src='../assets/documentList.png'  ></img>
+</p>
+
+
+```html
+
+
+        <!-- Example 1 using custom column template show version file -->
+        <content-column title="version" key="name" sortable="true" class="full-width ellipsis-cell">
+             <template let-context="$implicit">
+                      <div>V.{{context.row.getValue('properties.cm:versionLabel')}}</div>
+            </template>
+        </content-column>
+
+        <!-- Example 2 using custom column template show version file if present -->
+        <content-column title="version" key="name" sortable="true" class="full-width ellipsis-cell">
+             <template let-context="$implicit">
+               <div  *ngIf="context.row.getValue('properties.cm:versionLabel')">
+                 V.{{context.row.getValue('properties.cm:versionLabel')}}
+               </div>
+            </template>
+        </content-column>
+
+        <!-- Example 3 using custom column template show version file with style -->
+        <content-column title="version" key="name" sortable="true" class="full-width ellipsis-cell">
+             <template let-context="$implicit">
+                      <div  *ngIf="context.row.getValue('properties.cm:versionLabel')" class="version-style">
+                        V.{{context.row.getValue('properties.cm:versionLabel')}}
+                      </div>
+            </template>
+        </content-column>
+
+        <!-- Example 4 using a component -->
+        <content-column title="version" key="name" sortable="true" class="full-width ellipsis-cell">
+             <template let-context="$implicit">
+               <ng2-alfresco-version-badge [version]="context.row.getValue('properties.cm:versionLabel')"></ng2-alfresco-version-badge>
+            </template>
+        </content-column>
+
+        <!-- Example 5 using a component and change the stle-->
+        <content-column title="version" key="name" sortable="true" class="full-width ellipsis-cell">
+             <template let-context="$implicit">
+               <ng2-alfresco-version-badge [version]="context.row.getValue('properties.cm:versionLabel')"></ng2-alfresco-version-badge>
+            </template>
+        </content-column>
+
+
+```
+
+The example 5 use the [Version Badge Component](../ng2-alfresco-version-badge/README.md)
 
 ## Prerequisites
 
@@ -87,7 +141,7 @@ the public folder above wil be copied in the root of your project and you can re
  * './js/custom_script.js'
  * './css/custom_style.css'
 
- 
+
 ## History
 
 For detailed changelog, check [Releases](https://github.com/eromano/customize-document-list/releases).
@@ -95,4 +149,4 @@ For detailed changelog, check [Releases](https://github.com/eromano/customize-do
 ## Contributors
 
 [Contributors](https://github.com/eromano/customize-document-list/graphs/contributors)
-  
+

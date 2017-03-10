@@ -1,5 +1,12 @@
-# customize-viewer
-example hot to customize ng2-alfresco-viewer
+# Customize Viewer
+
+The examples in this repository are part of the [slides](https://www.slideshare.net/EugenioRomano/adf-in-action-12) adf in action.
+In this Example we are going to customize the ADF viewer in order to open a zip file.
+
+<p align="center">
+  <img title="browser stack" alt='browser stack' src='../assets/zip.png'  ></img>
+</p>
+
 
 ## Prerequisites
 
@@ -87,7 +94,7 @@ the public folder above wil be copied in the root of your project and you can re
  * './js/custom_script.js'
  * './css/custom_style.css'
 
- 
+
 ## History
 
 For detailed changelog, check [Releases](https://github.com/eromano/customize-viewer/releases).
@@ -95,4 +102,4 @@ For detailed changelog, check [Releases](https://github.com/eromano/customize-vi
 ## Contributors
 
 [Contributors](https://github.com/eromano/customize-viewer/graphs/contributors)
-  
+
