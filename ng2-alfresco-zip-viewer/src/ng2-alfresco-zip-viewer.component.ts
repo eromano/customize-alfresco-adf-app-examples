@@ -1,3 +1,4 @@
+
 import { Component, Input } from '@angular/core';
 import { Http, Response, RequestOptions, ResponseContentType }  from '@angular/http';
 import * as JSZip from 'jszip';
@@ -7,9 +8,7 @@ import 'rxjs/add/operator/toPromise';
     selector: 'ng2-alfresco-zip-viewer',
     template: `<table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
                   <thead>
-                    <tr>
-                      <th>Name</th>
-                    </tr>
+                    <tr><th>Name</th></tr>
                   </thead>
                   <tbody>
                     <tr  *ngFor="let file of zipFiles;  let idx = index">
@@ -33,8 +32,7 @@ export class Ng2AlfrescoZipViewerComponent {
         this.http.get(this.urlFile, new RequestOptions({
                 responseType: ResponseContentType.ArrayBuffer
             }))
-            .toPromise()
-            .then((res: Response) => {
+            .toPromise().then((res: Response) => {
                 this.extractZipData(res);
             });
     }

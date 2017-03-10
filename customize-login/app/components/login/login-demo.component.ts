@@ -60,9 +60,9 @@ export class LoginDemoComponent implements OnInit {
     }
 
     onLogin($event) {
-        this.getEcmUserInfo();
-        this.router.navigate(['/home']);
-    }
+    this.getEcmUserInfo();
+    this.router.navigate(['/home']);
+}
 
     onError($event) {
         this.logService.error($event);
